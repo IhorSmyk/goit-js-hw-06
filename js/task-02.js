@@ -24,19 +24,18 @@ const ingredients = [
   'Condiments',
 ];
 
-const dish = document.querySelector('#ingredients')
+const plate = document.querySelector('#ingredients');
+const dish = [];
 
-const liArr = []
+for (let i = 0; i < ingredients.length; i++) {
+  let li = document.createElement("li");
+  li.className = "item";
+  li.textContent = ingredients[i];
+  dish.push(li);
+}
 
-ingredients.forEach(el => {
-  const list = document.createElement('li')
-  list.className = 'item'
-  list.textContent = el
-  liArr.push(list)
-})
+plate.append(...dish);
 
-dish.append(...liArr)
-console.log(dish);
 
 // const ingredientsEl = document.querySelector('#ingredients');
 // console.log(ingredientsEl);
