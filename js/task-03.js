@@ -33,27 +33,6 @@ const galleryEl =
 galleryRef.insertAdjacentHTML("beforeend", galleryEl);
 
 galleryRef.style.display = "flex";
+galleryRef.style.listStyle = "none";
 galleryRef.style.flexDirection = "column";
 galleryRef.style.gap = "4px";
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function createGallery() {
-//   const galleryEl = images.map(el => <li><img class='Photo' src = '${el.url}' alt = '${el.alt}' width = '400'></li>).join('');
-
-//   gallery.insertAdjacentHTML('beforeend', galleryEl);
-//   return gallery;
-// }
-// gallery.style.display = 'flex';
-// gallery.style.gap = '20px';
-// console.log(createGallery(images));
