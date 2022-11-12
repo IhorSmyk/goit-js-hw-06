@@ -8,13 +8,12 @@
 <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
  */
 
-const inputWord = document.querySelector("#name-input")
+const inputRef = document.querySelector("#name-input");
+const outputRef = document.querySelector("#name-output");
 
-const spanWord = document.querySelector("#name-output")
-
-inputWord.addEventListener('input', (event) => {
-  spanWord.textContent = event.target.value;
-  if (!event.target.value) {spanWord.textContent = 'Anonymous'}
- });
-
- console.log(spanWord);
+inputRef.addEventListener("input", event => {
+  outputRef.textContent = event.target.value;
+  if (!event.target.value) {
+    outputRef.textContent = "Anonymous"
+  }
+});
