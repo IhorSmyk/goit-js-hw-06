@@ -8,12 +8,12 @@
 <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
  */
 
-const inputRef = document.querySelector("#name-input");
-const outputRef = document.querySelector("#name-output");
+const inputRef = document.querySelector('#name-input');
+const outputRef = document.querySelector('#name-output');
 
-inputRef.addEventListener("input", event => {
+inputRef.addEventListener('input', event => {
   outputRef.textContent = event.target.value;
   if (!event.target.value) {
-    outputRef.textContent = "Anonymous"
+    outputRef.textContent = 'Anonymous';
   }
 });

@@ -14,22 +14,14 @@ JavaScript містить масив рядків.
      за одну операцію у список ul#ingredients. 
      */
 
-
-const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
-];
+const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
 
 const plate = document.querySelector('#ingredients');
 const dish = [];
 
 for (let i = 0; i < ingredients.length; i++) {
-  let li = document.createElement("li");
-  li.className = "item";
+  let li = document.createElement('li');
+  li.className = 'item';
   li.textContent = ingredients[i];
   dish.push(li);
 }

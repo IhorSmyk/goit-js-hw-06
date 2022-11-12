@@ -25,14 +25,17 @@ const images = [
   },
 ];
 
-const galleryRef = document.querySelector(".gallery");
-const galleryEl =
-  images.map(el => `<li><img class="photo" src = ${el.url}
-   alt = ${el.alt} width = "500"></li>`).join('');
+const galleryRef = document.querySelector('.gallery');
+const galleryEl = images
+  .map(
+    el => `<li><img class="photo" src = ${el.url}
+   alt = ${el.alt} width = "500"></li>`
+  )
+  .join('');
 
-galleryRef.insertAdjacentHTML("beforeend", galleryEl);
+galleryRef.insertAdjacentHTML('beforeend', galleryEl);
 
-galleryRef.style.display = "flex";
-galleryRef.style.listStyle = "none";
-galleryRef.style.flexDirection = "column";
-galleryRef.style.gap = "4px";
+galleryRef.style.display = 'flex';
+galleryRef.style.listStyle = 'none';
+galleryRef.style.flexDirection = 'column';
+galleryRef.style.gap = '4px';
